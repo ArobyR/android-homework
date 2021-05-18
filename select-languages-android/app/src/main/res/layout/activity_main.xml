@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/selecciona_unlenguaje"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.074"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="159dp"
+        android:layout_height="259dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.194">
+
+        <CheckBox
+            android:id="@+id/main_checkBoxJavascript"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Javascript" />
+
+        <CheckBox
+            android:id="@+id/main_checkBoxC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="C" />
+
+        <CheckBox
+            android:id="@+id/main_checkBoxScala"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Scala" />
+
+        <CheckBox
+            android:id="@+id/main_checkBoxRuby"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ruby" />
+
+        <CheckBox
+            android:id="@+id/main_checkBoxDart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dart" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="155dp"
+        android:layout_height="257dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.294">
+
+        <CheckBox
+            android:id="@+id/main_checkBoxPython"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Python" />
+
+        <CheckBox
+            android:id="@+id/main_checkBoxSwift"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Swift" />
+
+        <CheckBox
+            android:id="@+id/main_checkBoxGo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go" />
+
+        <CheckBox
+            android:id="@+id/main_checkBoxKotlin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kotlin" />
+
+        <CheckBox
+            android:id="@+id/main_checkBoxJava"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Java" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/main_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="108dp"
+        android:onClick="showLanguages_OnClick"
+        android:text="Mostrar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
